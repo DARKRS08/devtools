@@ -1,38 +1,172 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>DARK DEVTOOLS — Free Online Developer Tools</title>
+
+    <meta
+      name="description"
+      content="DARK DEVTOOLS is your everyday digital toolbox. Explore 50 useful free online tools for developers, creators and curious minds. Fast, simple and private by design."
+    />
+
+    <meta name="author" content="DARKRS0840" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#09090b" />
-    <meta name="description" content="A free collection of fast, private browser tools for developers, creators and curious minds." />
+
+    <!-- Canonical URL: REPLACE WITH YOUR REAL DOMAIN -->
+    <link
+      rel="canonical"
+      href="https://darklabs4.vercel.app/"
+    />
+
     <!-- Google Search Console Verification -->
-     <meta name="google-site-verification" content="r0c7qzQxrMiZYJFWBYpJChbj1WnWJxah8rCYUaO2dAg" />
+    <meta
+      name="google-site-verification"
+      content="r0c7qzQxrMiZYJFWBYpJChbj1WnWJxah8rCYUaO2dAg"
+    />
+
+    <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <meta property="og:title" content="DARK DEVTOOLS — Your everyday digital toolbox" />
-    <meta property="og:description" content="50 useful tools. Free, fast, and private by design." />
-    <meta property="og:image" content="/og-image.svg" />
+
+    <!-- Open Graph / Facebook / Discord / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DARK DEVTOOLS" />
+    <meta
+      property="og:title"
+      content="DARK DEVTOOLS — Your Everyday Digital Toolbox"
+    />
+    <meta
+      property="og:description"
+      content="50 useful tools. Free, fast, and private by design. Explore your everyday digital toolbox."
+    />
+    <meta
+      property="og:url"
+      content="https://darklabs4.vercel.app/"
+    />
+    <meta
+      property="og:image"
+      content="https://darklabs4.vercel.app/og-image.svg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="DARK DEVTOOLS - Your Everyday Digital Toolbox" />
+
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
-    <title>DARK DEVTOOLS — Your everyday digital toolbox</title>
+    <meta
+      name="twitter:title"
+      content="DARK DEVTOOLS — Your Everyday Digital Toolbox"
+    />
+    <meta
+      name="twitter:description"
+      content="50 useful tools. Free, fast, and private by design."
+    />
+    <meta
+      name="twitter:image"
+      content="https://darklabs4.vercel.app/og-image.svg"
+    />
+
+    <!-- Structured Data: Website -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DARK DEVTOOLS",
+        "alternateName": "DARKRS0840 DevTools",
+        "description": "A free collection of fast, private browser tools for developers, creators and curious minds.",
+        "url": "https://darklabs4.vercel.app/"
+      }
+    </script>
+
+    <!-- Existing Boot Splash Styles -->
     <style>
-      #boot-splash{position:fixed;inset:0;z-index:9999;display:grid;place-content:center;justify-items:center;gap:20px;background:#09090b;opacity:1;transition:opacity .18s ease,visibility .18s ease;pointer-events:none}
-      #boot-splash img{display:block;width:min(248px,64vw);height:auto;animation:boot-logo-in .45s ease-out both}
-      #boot-splash span{width:20px;height:20px;border:1.5px solid rgba(167,139,250,.22);border-top-color:#a78bfa;border-radius:50%;animation:boot-spin .9s linear infinite}
-      #boot-splash.is-ready{opacity:0;visibility:hidden}
-      @keyframes boot-logo-in{from{opacity:.5;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
-      @keyframes boot-spin{to{transform:rotate(360deg)}}
-      @media(prefers-reduced-motion:reduce){#boot-splash,#boot-splash *{animation:none!important;transition:none!important}#boot-splash img{opacity:1}}
+      #boot-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: grid;
+        place-content: center;
+        justify-items: center;
+        gap: 20px;
+        background: #09090b;
+        opacity: 1;
+        transition: opacity 0.18s ease, visibility 0.18s ease;
+        pointer-events: none;
+      }
+
+      #boot-splash img {
+        display: block;
+        width: min(248px, 64vw);
+        height: auto;
+        animation: boot-logo-in 0.45s ease-out both;
+      }
+
+      #boot-splash span {
+        width: 20px;
+        height: 20px;
+        border: 1.5px solid rgba(167, 139, 250, 0.22);
+        border-top-color: #a78bfa;
+        border-radius: 50%;
+        animation: boot-spin 0.9s linear infinite;
+      }
+
+      #boot-splash.is-ready {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      @keyframes boot-logo-in {
+        from {
+          opacity: 0.5;
+          transform: translateY(3px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes boot-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        #boot-splash,
+        #boot-splash * {
+          animation: none !important;
+          transition: none !important;
+        }
+
+        #boot-splash img {
+          opacity: 1;
+        }
+      }
     </style>
   </head>
+
   <body>
     <div id="boot-splash" aria-hidden="true">
-      <img src="/logo-wordmark.webp" width="1420" height="443" alt="" />
+      <img
+        src="/logo-wordmark.webp"
+        width="1420"
+        height="443"
+        alt=""
+      />
       <span></span>
     </div>
+
     <div id="root"></div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
