@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09090b" />
+    <meta name="description" content="A free collection of fast, private browser tools for developers, creators and curious minds." />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta property="og:title" content="DARK DEVTOOLS — Your everyday digital toolbox" />
+    <meta property="og:description" content="50 useful tools. Free, fast, and private by design." />
+    <meta property="og:image" content="/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>DARK DEVTOOLS — Your everyday digital toolbox</title>
+    <style>
+      #boot-splash{position:fixed;inset:0;z-index:9999;display:grid;place-content:center;justify-items:center;gap:20px;background:#09090b;opacity:1;transition:opacity .18s ease,visibility .18s ease;pointer-events:none}
+      #boot-splash img{display:block;width:min(248px,64vw);height:auto;animation:boot-logo-in .45s ease-out both}
+      #boot-splash span{width:20px;height:20px;border:1.5px solid rgba(167,139,250,.22);border-top-color:#a78bfa;border-radius:50%;animation:boot-spin .9s linear infinite}
+      #boot-splash.is-ready{opacity:0;visibility:hidden}
+      @keyframes boot-logo-in{from{opacity:.5;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+      @keyframes boot-spin{to{transform:rotate(360deg)}}
+      @media(prefers-reduced-motion:reduce){#boot-splash,#boot-splash *{animation:none!important;transition:none!important}#boot-splash img{opacity:1}}
+    </style>
+  </head>
+  <body>
+    <div id="boot-splash" aria-hidden="true">
+      <img src="/logo-wordmark.webp" width="1420" height="443" alt="" />
+      <span></span>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
